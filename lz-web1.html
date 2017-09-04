@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web1</title>
+	<link rel="stylesheet" href="lz-web1.css">
+	<link rel="stylesheet" href="2/iconfont.css">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<img src="img/top.jpg" alt="">
+		</div>
+		<div class="web">
+			<div class="web1"><img src="img/个人中心 (1).jpg" alt=""></div>
+			<div class="web2">WEB<img src="img/矩形 4 拷贝.jpg" alt=""><img src="img/矩形 4 拷贝.jpg" alt="" class="img3"></div>
+			<div class="web3"><img src="img/fangdajing.jpg" alt=""></div>
+		</div>
+		<div class="lise">
+			<div class="lise1">
+				<img src="img/圆角矩形 1.jpg" alt="">
+			</div>
+			<div class="lise2"></div>
+			<div class="lise2"></div>
+			<div class="lise2"></div>
+			<div class="lise2"></div>
+			<div class="lise2"></div>
+		</div>
+		<div class="banner">
+			
+				<img src="img/000.jpg" alt="" class="img1">
+			
+			<!-- <li class="img2"></li>
+			<li class="img3"></li>
+			<li class="img4"></li> -->
+			<div class="banner-left">网页设计——小技巧</div>
+			<div class="banner-right">
+				<div class="banner-yan">
+					<!-- <img src="" alt="" class="iconfont icon-yanjing-copy"> -->
+				</div>
+				<div class="banner-shu">3678</div>
+			</div>
+			
+		</div>
+		<div class="words">
+				<p>网页设计中、图片常用的五点技巧</p>
+				<h1>图片在网页中所扮演的角色越来越重要。作为最常见也是最早使用的网页多媒体，图片对于网页设计师而言至关重要...</h1>
+				<div class="shijian">
+					<img src="img/calendar.jpg" alt="">
+					<span>2017-02-20</span>
+				</div>
+		</div>
+		<div class="banner2">
+			
+				<img src="img/000.jpg" alt="" class="img1">
+			
+			<!-- <li class="img2"></li>
+			<li class="img3"></li>
+			<li class="img4"></li> -->
+			<div class="banner2-left">网页设计中——视频应用</div>
+			<div class="banner2-right">
+				<div class="banner2-yan">
+					<!-- <img src="" alt="" class="iconfont icon-yanjing-copy"> -->
+				</div>
+				<div class="banner2-shu">3678</div>
+			</div>
+			
+		</div>
+		<div class="words2">
+				<p>网页设计中视频应用的七个小技巧</p>
+				<h1>随着网络传输速度的提升，视频在网页中的应用越来越多，也越来越广泛，宽带和流量对于网页视频的限制已经不再...</h1>
+				<div class="shijian">
+					<img src="img/calendar.jpg" alt="">
+					<span>2017-02-20</span>
+				</div>
+				<div class="bottom">
+					<a href="">WEB</a>
+					<a href="">WATCH</a>
+					<a href="">APP</a>
+				</div>
+		</div>
+		
+	</div>
+	
+</body>
+<script type="text/javascript">
+    	
+   		(function (doc, win) {
+        	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                
+//              750 代表设计稿的宽度,设计稿多款,他就改成多大
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+	        if (!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+   		
+    </script>
+</html>
