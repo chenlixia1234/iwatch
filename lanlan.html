@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <title></title>
+</head>
+   <script type="text/javascript">
+   		(function (doc, win) {
+        	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                
+//              750 代表设计稿的宽度,设计稿多款,他就改成多大
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+	        if (!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+    </script>
+    <style>
+    	*{
+    		margin:0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	}
+    	header{
+    		
+    		width: 7.02rem;
+    		height: 0.2rem;
+    		margin:0.1rem auto 0.1rem;
+    		background-image:url(img/1.jpg);
+    		background-repeat: no-repeat;
+    		background-size:100%;
+    	}
+    	section{
+    		width: 100%;
+    		height: 0.9rem;
+    		background:#fff;
+    	}
+    	.state{
+    		width: 6.71rem;
+    		height: 100%;
+    		/*background:cyan;*/
+    		margin:0 auto;
+    		display: flex;
+    		justify-content: space-between;
+    		align-content: center;
+    		position: relative;
+    	}
+    	.state>li:first-child{
+    		width:0.46rem;
+    		height:0.46rem;
+    		position: absolute;
+    		top:0;bottom:0;left:0;
+    		margin:auto;
+    		background-image: url(img/5.jpg);
+    		background-size:cover;
+    	}
+    	.state>li:nth-child(2){
+    		width:2.33rem;
+    		height:0.88rem;
+    		/* background: olive; */
+    		font-family: "苹方";
+    		font-size: 0.4rem;
+    		line-height: 0.60rem;
+    		color:#1d1d1d;
+    		text-align: center;
+    		position: absolute;
+    		left:0;right:0;top: 0.1rem;
+    		margin:auto;
+
+    		
+    	}
+    	.state>li:nth-child(2) span{
+    		display: block;
+    		background-image: url(img/3.jpg);
+    		width:0.30rem;
+    		height:0.18rem;
+    		position: absolute;
+    		left:0;right:0;
+    		margin:auto;
+    		background-size:cover;
+    		
+    	}
+    	.state>li:last-child{
+    		width:0.46rem;
+    		height:0.46rem;
+    		position: absolute;
+    		top:0;bottom:0;right:0;
+    		margin:auto;
+    		background-image: url(img/4.jpg);
+    		background-size:cover;
+    	}
+    	.main{
+    		width:100%;
+    		height:7.97rem;
+    		background:#fff;
+    		position: relative;
+    	}
+    	.main1{
+    		width:5.04rem;
+    		height:7.61rem;
+    		background-image:url(img/2.jpg);
+    		position:absolute;
+    		top:0;bottom:0;left:0;right:0;
+    		margin: auto;
+    		background-size:cover;
+    	
+    	}
+    	.fot{
+    		width:100%;
+    		height:4.01rem;
+    		background:#fff;
+    		position: relative;
+    	}
+    	.fot1{
+    		width:6.71rem;
+    		height:100%;
+    		/*background:pink;*/
+    		position: absolute;
+    		left:0;right:0;
+    		margin:auto;
+    	}
+    	.fot2{
+    		width:5.26rem;
+    		height:1.12rem;
+    		/*background:#fff;*/
+    		position: relative;
+    		left:0;right:0;
+    		margin:auto;
+    	}
+    	.fot3{
+    		width: 100%;
+    		height: 0.67rem;
+    		/*background:green;*/
+    		font-family: "苹方";
+    		font-size: 0.34rem;
+    		line-height: 0.49rem;
+    		color:#1d1d1d;
+    		text-align: center;
+    	}
+        .fot3 span{
+            font-weight: bolder;
+        }
+    	.fot4{
+    		width: 2.0rem;
+    		height: 0.64rem;
+    		/*background:green;*/
+    		margin:0 auto;
+    		border-top:1px solid #303535;
+    		font-family: "苹方";
+    		font-size: 0.22rem;
+    		line-height: 0.64rem;
+    		color:#2c2c2c;
+    		text-align: center;
+    	}
+    	.null{
+    		width:100%;
+    		height: 0.42rem;
+    	}
+    	.fot5{
+    		width: 6.71rem;
+    		height: 1.50rem;
+    		/*background:green;*/
+    	}
+		.fot6{
+		width: 6.71rem;
+		height: 1.0rem;
+		/*background:red;*/
+		font-family: "苹方";
+		font-size: 0.24rem;
+		line-height: 0.36rem;
+		color:#626262;
+    	}
+    	.fot7{
+		width: 1.93rem;
+		height: 0.26rem;
+		/*background:red;*/
+		float:right;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+    	}
+    	.fot7>li{
+		width: 0.77rem;
+		height: 0.26rem;
+		/*background:lime;*/
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+    	}
+    	.fot7>li>ol:first-child{
+    	width: 0.3rem;
+		height: 0.26rem;
+		/*background:olive;*/
+    	}
+    	.fot7>li>ol:first-child a{
+    		display: block;
+	    	width: 100%;
+			height: 100%;
+			/*background:olive;*/
+			font-size:0.3rem;
+			text-align: center;
+			line-height:0.26rem;
+			color:#939393;
+    	}
+    	.fot7>li>ol:last-child{
+    	width: 0.36rem;
+		height: 0.26rem;
+		/*background:olive;*/
+		font-family: "苹方";
+		font-size: 0.2rem;
+		line-height: 0.26rem;
+		color:#626262;
+    	}
+    	.fot8{
+    	width: 6.70rem;
+		height: 0.8rem;
+		/* background:olive; */
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+    	}
+    	.fot8>li{
+    	width: 33%;
+		height: 100%;
+		/*background:lime;*/
+		font-family: "苹方";
+		font-size: 0.36rem;
+		line-height: 0.8rem;
+		color:#9d9d9d;
+		text-align: center;
+    	}
+    	.fot8>li:nth-child(2){
+    		color:#1d1d1d ;
+    	}
+    </style>
+<body>
+	<header></header>
+	<section>
+		<ul class="state">
+			<li></li>
+			<li>WATCH
+			<span></span></li>
+			<li></li>
+		</ul>
+	</section>
+	<section class="main">
+		<div class="main1"></div>
+	</section>
+	<section class="fot">
+		<div class="fot1">
+			<div class="fot2">
+				<div class="fot3">关于<span>iwatch</span>的交互特性及使用情境</div>
+				<div class="fot4">96840人已阅读</div>
+			</div>
+			<div class="null"></div>
+			<div class="fot5">
+				<div class="fot6">Iwatch界面主要分为：表盘主界面 通知界面 快捷视图 首屏选择界面和APP界面......</div>
+				<ul class="fot7">
+					<li>
+						<ol><a class="iconfont icon-xin" href=""></a></ol>
+						<ol>258</ol>
+					</li>
+					<li>
+						<ol><a class="iconfont icon-weixin" href=""></a></ol>
+						<ol>534</ol>
+					</li>
+				</ul>
+			</div>
+			<ul class="fot8">
+				<li>WEB</li>
+				<li>WATCH</li>
+				<li>APP</li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>

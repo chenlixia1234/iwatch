@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+</head>
+   <script type="text/javascript">
+   		(function (doc, win) {
+        	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                
+//              750 代表设计稿的宽度,设计稿多款,他就改成多大
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+	        if (!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+    </script>
+    <style>
+    	*{
+    		margin:0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	}
+    	header{
+    		
+    		width: 7.02rem;
+    		height: 0.2rem;
+    		margin:0.1rem auto 0.1rem;
+    		background-image:url(img/1.jpg);
+    		background-repeat: no-repeat;
+    		background-size:cover;
+    	}
+    	.sousuo{
+    		width: 7.02rem;
+    		height: 0.89rem;
+    		/*background: cyan;*/
+    		margin:0 auto;
+    		position: relative;
+    	}
+    	form{
+    		width: 5.92rem;
+    		height: 0.57rem;
+    		border:1px solid #4E4E4E;
+    		border-radius: 0.03rem;
+    		margin:0 auto;
+    		position:absolute;
+    		top:0;bottom: 0;left:0;
+    		margin:auto;
+    	}
+    	form>a{
+    		display: block;
+    		width: 0.35rem;
+    		height: 0.35rem;
+    		background-image: url(img/11.jpg);
+    		background-size:cover;
+    		position: absolute;
+    		top:0;bottom:0;left:0.05rem;
+    		margin:auto;
+    	}
+    	
+    	form>input{
+    		outline: none;
+    		width: 5.77rem;
+    		height: 100%;
+    		border:none;
+    		background: none;
+    		position: absolute;
+    		top:0;bottom:0;left:0.54rem;right:0;
+    		margin:auto;
+    		font-family: "苹方";
+    		font-size:0.28rem;
+    		line-height: 0.35rem;
+    		color:#1d1d1d;
+    	}
+    	.button{
+    		
+    		width: 0.68rem;
+    		height: 0.39rem;
+    		
+    		position: absolute;
+    		top:0;bottom:0;right:0.17rem;
+    		margin:auto;
+    		font-family: "苹方";
+    		font-size:0.34rem;
+    		line-height: 0.35rem;
+    		color:#1d1d1d;
+    	}
+    	.hot{
+    		width: 7.03rem;
+    		height: 4.47rem;
+    		margin: 0 auto;
+    		/*background: pink;*/
+    		position: relative;
+    		border-bottom:2px solid #E8E8E8;
+    	}
+    	.hot5{
+    		width: 7.03rem;
+    		height: 7.36rem;
+    		margin: 0 auto;
+    		/*background: pink;*/
+    		position: relative;
+    	}
+    	.hot1{
+    		width:2.89rem;
+    		height:1.01rem;
+    		background-image: url(img/8.jpg);
+    		background-size:cover;
+    		position: absolute;
+    		top:0.52rem;left:0;right:0;
+    		margin:auto;
+    	}
+    	.hot0{
+    		width:3.80rem;
+    		height:1.01rem;
+    		background-size:cover;
+    		background-image: url(img/9.jpg);
+    		position: absolute;
+    		top:0.52rem;left:0;right:0;
+    		margin:auto;
+    	}
+    	.hot2{
+    		width:6.03rem;
+    		height:1.89rem;
+    		/*background:red;*/
+    		position: absolute;
+    		top:1.94rem;left:0;right:0;
+    		margin:auto;
+    	}
+    	.hot3{
+    		width:4.51rem;
+    		height:0.41rem;
+    		/*background:lime;*/
+    		margin:0 auto;
+    		display: flex;
+    		justify-content:space-between;
+    		align-content: center;
+    	}
+    	.hot3>li{
+    		width:1.2rem;
+    		height:0.41rem;
+    		border:1px solid #7F7F7F;
+    		border-radius: 0.03rem;
+    		font-family: "苹方";
+    		font-size: 0.24rem;
+    		line-height: 0.41rem;
+    		text-align: center;
+    		color:#929292;
+    	}
+    	 .hot4{
+    		width:6.02rem;
+    		height:0.41rem;
+    		/*background:lime;*/
+    		margin:0 auto;
+    		display: flex;
+    		justify-content:space-between;
+    		align-content: center;
+    	}
+    	.hot4>li{
+    		width:1.2rem;
+    		height:0.41rem;
+    		border:1px solid #7F7F7F;
+    		border-radius: 0.03rem;
+    		font-family: "苹方";
+    		font-size: 0.24rem;
+    		line-height: 0.41rem;
+    		text-align: center;
+    		color:#929292;
+    	}
+    	.null0{
+    		width:100%;
+    		height:0.36rem;
+    	}
+    	.round{
+    		width:0.32rem;
+    		height:0.32rem;
+    		background-image: url(img/10.jpg);
+    		background-size:cover;
+    		position: absolute;
+    		top:4.79rem;left: 0;right:0;
+    		margin:auto;
+    	}
+    </style>
+<body>
+	<header></header>
+	<section class="sousuo">
+		<form action="">
+			<a href=""></a>
+			<input type="text" value="Hi！你想要的都在这里. . ."/>
+			
+		</form>
+		<div class="button">取消</div>
+	</section>
+	<section class="hot">
+		<div class="hot1"></div>
+		<div class="hot2">
+			<ul class="hot3">
+				<li>抽屉式</li>
+				<li>瀑布流</li>
+				<li>卡片式</li>
+			</ul>
+			<div class="null0"></div>			
+			<ul class="hot4">
+				<li>个人主页</li>
+				<li>设计要素</li>
+				<li>APP</li>
+				<li>登录页面</li>
+			</ul>
+			<div class="null0"></div>	
+			<ul class="hot3">
+				<li>排行榜</li>
+				<li>注册页面</li>
+				<li>WATCH</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="hot5">
+		<div class="hot0"></div>
+		<div class="hot2">
+			<ul class="hot3">
+				<li>抽屉式</li>
+				<li>瀑布流</li>
+				<li>卡片式</li>
+			</ul>
+			<div class="null0"></div>			
+			<ul class="hot4">
+				<li>个人主页</li>
+				<li>设计要素</li>
+				<li>APP</li>
+				<li>登录页面</li>
+			</ul>
+			<div class="null0"></div>	
+			<ul class="hot3">
+				<li>排行榜</li>
+				<li>注册页面</li>
+				<li>WATCH</li>
+			</ul>
+		</div>
+		<div class="round"></div>
+	</section>
+</body>
+</html>
