@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+   	<link rel="stylesheet" href="css/sll1.css" />
+   	<link rel="stylesheet" href="css/base.css" />
+   	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+    <script type="text/javascript">
+    	
+   		(function (doc, win) {
+        	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                
+//              750 代表设计稿的宽度,设计稿多宽,就改成多大
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+	        if (!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+   		
+    </script>	
+</head>
+<body>
+	<header></header>
+	<div class="box">
+		<div class="boxleft">
+			<a href=""class="iconfont icon-arrow-left"></a>
+		</div>
+		<div class="boxcenter">
+			<a href="">个人资料</a>
+		</div>
+	</div>
+	<hr />
+	<div class="box1">
+		<div class="box1left">
+			<a href="">头像</a>
+		</div>
+		<div class="box1right"></div>
+	</div>
+	<div class="box2">
+		<div class="box2left">
+			<a href="">名字</a>
+		</div>
+		<div class="box2right">
+			<a href="">间谍活动</a>
+		</div>
+	</div>
+	<div class="box3">
+		<div class="box2left">
+			<a href="">账号</a>
+		</div>
+		<div class="box3right">
+			<a href="">182****2516</a>
+		</div>
+	</div>
+</body>
+</html>
